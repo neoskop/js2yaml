@@ -15,7 +15,7 @@
   "homepage": "https://github.com/neoskop/js2yaml",
   "main": "index.js",
   "scripts": {
-    "start": "node js2yaml.js js2yaml.config.js"
+    "start": "node index.js js2yaml.config.js"
   },
   "dependencies": {
     "chokidar": "3.5.1",
