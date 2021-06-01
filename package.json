@@ -1,0 +1,24 @@
+{
+  "name": "js2yaml",
+  "description": "Create configurations with the power of Javascript and convert it to YAML.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Maik Jablonski <jablonski@neoskop.de> (https://www.neoskop.de)",
+  "keywords": [
+    "javascript",
+    "yaml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neoskop/js2yaml.git"
+  },
+  "homepage": "https://github.com/neoskop/js2yaml",
+  "main": "index.js",
+  "scripts": {
+    "start": "node js2yaml.js js2yaml.config.js"
+  },
+  "dependencies": {
+    "chokidar": "3.5.1",
+    "yaml": "1.10.2"
+  }
+}
