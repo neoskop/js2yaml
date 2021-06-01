@@ -5,6 +5,11 @@ const path = require("path");
 const chokidar = require("chokidar");
 const yaml = require("yaml");
 
+if (!process.argv[2]) {
+  console.error("Please provide path to configuration file.");
+  process.exit();
+}
+
 const js2yamlConfig = require(path.resolve(process.argv[2]));
 js2yamlConfig.forEach((config) => {
   const cache = {};

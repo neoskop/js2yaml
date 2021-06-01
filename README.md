@@ -4,7 +4,7 @@ This small utility allows you to create configuration files with Javascript and 
 
 ## How does it work
 
-To get started, you have to provide a configuration file (e.g. `js2yaml.config.js`). E.g. the following configuration converts Javascript to YAML for Magnolia CMS and is provided as an example in the project:
+To get started, you have to provide a configuration file (e.g. `js2yaml.config.js`). E.g. the following configuration converts Javascript to YAML for Magnolia CMS:
 
 ```js
 module.exports = [
@@ -37,5 +37,5 @@ module.exports = [
 Now you can start the file watching process via:
 
 ```sh
-node js2yaml.js js2yaml.config.js
+node index.js js2yaml.config.js
 ```
