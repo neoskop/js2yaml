@@ -5,12 +5,14 @@ const path = require("path");
 const chokidar = require("chokidar");
 const yaml = require("yaml");
 
-if (!process.argv[2]) {
+let js2yamlConfig;
+try {
+  js2yamlConfig = require(path.resolve(process.argv[2]));
+} catch (e) {
   console.error("Please provide path to configuration file.");
-  process.exit();
+  process.exit(1);
 }
 
-const js2yamlConfig = require(path.resolve(process.argv[2]));
 js2yamlConfig.forEach((config) => {
   const cache = {};
   const watcher = chokidar.watch(config.watch);
