@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const chokidar = require("chokidar");
 const yaml = require("yaml");
+const { globSync } = require("glob");
 
 let js2yamlConfig;
 try {
@@ -15,7 +16,7 @@ try {
 
 js2yamlConfig.forEach((config) => {
   const cache = {};
-  const watcher = chokidar.watch(config.watch);
+  const watcher = chokidar.watch(globSync(config.watch));
   watcher.on("change", (path) => {
     try {
       // Build a plain array of watched files
