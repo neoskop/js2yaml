@@ -3,7 +3,7 @@
   "description": "Create configurations with the power of Javascript and convert it to YAML.",
   "version": "4.1.4",
   "license": "MIT",
-  "author": "Maik Jablonski <jablonski@neoskop.de> (https://www.neoskop.de)",
+  "author": "Maik Jablonski <jablonski@neoskop.de>",
   "keywords": [
     "javascript",
     "yaml"
