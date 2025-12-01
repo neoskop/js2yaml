@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const fs = require("fs");
-const path = require("path");
+const fs = require("node:fs");
+const path = require("node:path");
 const chokidar = require("chokidar");
 const yaml = require("yaml");
 const { globSync } = require("glob");
