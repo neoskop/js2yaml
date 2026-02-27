@@ -1,0 +1,17 @@
+{
+    "extends": [
+        "config:recommended"
+    ],
+    "lockFileMaintenance": {
+        "enabled": true
+    },
+    "packageRules": [
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "automerge": false
+        }
+    ]
+}
