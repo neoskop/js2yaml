@@ -18,7 +18,7 @@
     "js2yaml": "./index.js"
   },
   "dependencies": {
-    "chokidar": "5.0.0",
+    "chokidar": "6.0.0",
     "glob": "13.0.6",
     "yaml": "2.9.1"
   }
